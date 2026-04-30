@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <title>Mayra Matos</title>
 </head>
 <body>
-    <nav>
-        <div>
-            <img src="" alt="">
-        </div>
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#formacao">Formação</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-    <main class="">
-        <div>
-            <img src="" alt="">
-        </div>
-        <div>
-            <h1>Mayra Matos</h1>
-            <p>Sou Full-Stack Developer</p>
+    <header>
+        <nav class="menu-container">
+            <div class="logo-menu">
+                <a href="#intro">Dev Matos
+            </div>
+            <ul class="menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="intro-bg" id="intro">
+        <div class="intro container">
+            <div>
+                <img src="6b9e984e0ba69950d92af38f91401c18.jpg" alt="Teste">
+            </div>
+            <div>
+                <h1>Mayra Matos</h1>
+                <p>Sou <span class="">Full-Stack Developer</span></p>
+            </div>
         </div>
     </main>
     <section id="sobre">
@@ -93,8 +100,14 @@
         <h2>Contato</h2>
         <p>Feel free to reach out to me!</p>
         <div>
-            <p>Email: mayra@example.com</p>
-            <p>Telefone: (11) 1234-5678</p>
+            <form action="">
+                <label for="nome" id="nome"> Nome</label>
+                <input type="text">
+                <label for="email" id="email"> E-mail </label>
+                <input type="email">
+                <label for="mensagem"> Mensagem </label>
+                <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+            </form>
         </div>
     </section>
     <footer>
