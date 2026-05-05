@@ -1,8 +1,11 @@
 * {
     margin: 0px;
-    background-color: #000000;
     color: #ffffff;
     font-family: 'Inter','Arial';
+}
+
+body {
+    background-color: var(--cor-6);
 }
 
 p, h1, h2, h3 {
